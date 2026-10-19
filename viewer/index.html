@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkCast</title>
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+
+<div id="prompt">
+  <h1>LinkCast</h1>
+  <p class="hint">Enter the code shown on the instructor's screen</p>
+  <form id="form" action="#" method="get" autocomplete="off">
+    <input id="code" name="c" type="tel" maxlength="16" autocomplete="off"
+           autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+    <br>
+    <button id="go" type="submit">Connect</button>
+  </form>
+  <p id="error" role="alert"></p>
+</div>
+
+<img id="video" alt="" style="display:none">
+
+<div id="status" style="display:none">Reconnecting...</div>
+
+<script src="viewer-config.js"></script>
+<script src="viewer.js"></script>
+</body>
+</html>
